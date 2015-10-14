@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    	<meta name="Keywords" content="">
+    	<meta name="Description" content="">
+    	<title>手风琴式切换页</title>
+    	<link rel="stylesheet" type="text/css" href="css/accordion.css">
+    	<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+    	<script type="text/javascript" src="js/jquery.accordion.js"></script>
+
+    	<script type="text/javascript">
+			$(function(){
+				//使用举例，具体参数详解见插件内部
+				$('.tab_container').accordion({
+					clickItem : $('.same_open'),
+					contentItem : $('.same_open_content'),
+					contentWidth : '340px',
+					closeTime : 500,
+					openTime : 500,
+					tmpInput : $('#tmp'),
+					clickItemBgColor : '#9d8757',
+					contentItemBgColor : '#e2dbcc'
+				});
+			});
+    	</script>
+    </head>
+    <body>
+
+
+    	<div class="accordion_content">
+			<div class="same_open same_offset" data='food'>餐饮美食</div>
+			<div id="food" class="same_open_content same_offset open_content">
+				<img src="image/open_one.jpg" alt="桂林漓江大瀑布饭店" />
+				<div class="open_article">
+					<h1>桂水阁茶餐厅</h1>
+					<p>婚宴42桌,高雅恬淡的布置，透明的落地玻璃墙，窗外盎然的花园，使您在用餐的同时也... <a class="more_info" href="#">[详细]</a></p>
+				</div>
+			</div>
+			<div class="same_open same_offset" data="house">温馨客房</div>
+			<div id="house" class="same_open_content same_offset">
+				<img src="image/open_two.jpg" alt="桂林漓江大瀑布饭店" />
+				<div class="open_article">
+					<h1>桂水阁茶餐厅</h1>
+					<p>婚宴42桌,高雅恬淡的布置，透明的落地玻璃墙，窗外盎然的花园，使您在用餐的同时也... <a class="more_info" href="#">[详细]</a></p>
+				</div>
+			</div>
+			<div class="same_open same_offset" data="meeting">宴会会议</div>
+			<div id="meeting" class="same_open_content same_offset">
+				<img src="image/open_one.jpg" alt="桂林漓江大瀑布饭店" />
+				<div class="open_article">
+					<h1>桂水阁茶餐厅</h1>
+					<p>婚宴42桌,高雅恬淡的布置，透明的落地玻璃墙，窗外盎然的花园，使您在用餐的同时也... <a class="more_info" href="#">[详细]</a></p>
+				</div>
+			</div>
+			<div class="same_open same_offset" data="entertainment">休闲娱乐</div>
+			<div id="entertainment" class="same_open_content same_offset">
+				<img src="image/open_one.jpg" alt="桂林漓江大瀑布饭店" />
+				<div class="open_article">
+					<h1>桂水阁茶餐厅</h1>
+					<p>婚宴42桌,高雅恬淡的布置，透明的落地玻璃墙，窗外盎然的花园，使您在用餐的同时也... <a class="more_info" href="#">[详细]</a></p>
+				</div>
+			</div>
+			<input id="tmp" type="hidden" value="food" />
+		</div>
+
+		
+    </body>
+</html>
